@@ -1,0 +1,26 @@
+Adding TestNg to the cucumber framework
+
+
+Search for cucumber testng latest maven dependency in the browser
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>6.11.0</version>
+</dependency>
+
+---------------------------------------------------------------------------------
+Make sure your version of cucumber-jvm is same as the cucumber-testng
+Make sure you are inmporting from io.cucumber instead of junit 
+remove cucumber-jvm dependency and cucumber j-unit dependency
+---------------------------------------------------------------------------------
+
+add this to your pom.xml
+
+Next go to the testRunner and remove the @RunWith(Cucumber.class)
+and add AbstractTestNGCucumberTests as a parent to the testRunner class
+
+
+If the class is not showing and not importing suggestion
+right click on maven and select update project and further click on ok
+this should get all the updated dependencies

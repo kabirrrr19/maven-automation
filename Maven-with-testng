@@ -1,0 +1,18 @@
+Go to Apache maven and install the zip file 
+Now extract it inside any folder
+
+Now go to the environment variables and add the path of jdk to your system and environment variables.
+Similarly add the path of bin directory of apache maven to the system and environment variables
+
+now check if mvn is installed by doing mvn --version in a new terminal
+
+add maven surefire plugin
+add maven cucumber reporting plugin
+
+in your pom.xml add these properties inside the properties tag
+	<maven.compiler.source>13</maven.compiler.source>
+	<maven.compiler.target>13</maven.compiler.target>
+
+and navigate to your folder using cmd and run the command mvn clean install and a folder of name test-output will be created. 
+	there in cucumber html report open overview-features.html
+	
